@@ -75,10 +75,11 @@ class Post extends Model
           $pel_hp = $_POST['pel_hp'];
           $pel_ktp = $_POST['pel_ktp'];
           $pel_meteran = $_POST['pel_meteran'];
+          $pel_id_user = $_POST['pel_id_user'];
           $id = $_POST['id'];
 
           $sql = "UPDATE tb_pelanggan
-                  SET pel_name=:pel_name, pel_alamat=:pel_alamat, pel_hp=:pel_hp, pel_ktp=:pel_ktp, pel_meteran=:pel_meteran
+                  SET pel_name=:pel_name, pel_alamat=:pel_alamat, pel_hp=:pel_hp, pel_ktp=:pel_ktp, pel_meteran=:pel_meteran, pel_id_user=:pel_id_user
                   WHERE pel_id=:pel_id";
 
           $stmt = $this->db->prepare($sql);
@@ -88,6 +89,7 @@ class Post extends Model
           $stmt->bindParam(":pel_hp", $pel_hp);
           $stmt->bindParam(":pel_ktp", $pel_ktp);
           $stmt->bindParam(":pel_meteran", $pel_meteran);
+          $stmt->bindParam(":pel_id_user", $pel_id_user);
           $stmt->bindParam(":pel_id", $id);
 
           $stmt->execute();

@@ -47,9 +47,13 @@
             </td>
         </tr>
         <tr>
-            <td>User Id</td>
+            <td>User</td>
             <td>
-            <input type="text" name="pel_id_user" required>
+                <select name="pel_id_user">
+                    <?php foreach ($data['optUser'] as $opt) { ?>
+                        <option value="<?php echo $opt['user_id']; ?>"><?php echo $opt['user_name']; ?></option>
+                    <?php } ?>
+                </select>
             </td>
         </tr>
         <tr>

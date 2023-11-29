@@ -1,11 +1,11 @@
 {
-    "name": "suendri-uinsu/pbwl-project11",
-    "description": "Praktikum pbwl-project11 Pemrograman Berbasis Web Lanjutan",
+    "name": "Rizki Prasetya Hidayat Nst/pbwl-project10",
+    "description": "Praktikum pbwl-project10 Pemrograman Berbasis Web Lanjutan",
     "type": "project",
     "authors": [
         {
-            "name": "suendri-uinsu",
-            "email": "suendri@uinsu.ac.id"
+            "name": "Rizki Prasetya Hidayat Nst",
+            "email": "rizkiprastya.h.nst@gmail.com"
         }
     ],
     "autoload": {

@@ -25,6 +25,8 @@ class Posts extends Controller
      {
           // Membuat option categories
           $data['optcat'] = $this->model->optCat();
+          $user = new \App\Models\User();
+          $data['optUser'] = $user->optUser();
 
           $this->dashboard('posts/input', $data);
      }
@@ -42,6 +44,8 @@ class Posts extends Controller
 
           // Membuat option categories
           $data['optcat'] = $this->model->optCat();
+          $user = new \App\Models\User();
+          $data['optUser'] = $user->optUser();
 
           $this->dashboard('posts/edit', $data);
      }

@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" href="<?php echo AST; ?>/img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="<?php echo AST; ?>/datatables/datatables.min.css">
 	<link rel="stylesheet" href="<?php echo AST; ?>/css/style.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="<?php echo AST; ?>/datatables/datatables.min.js"></script>
 
 </head>
@@ -28,28 +28,23 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="<?php echo URL; ?>/dashboard">
-						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Home
+					<a href="<?php echo URL; ?>/dashboard"><i class="fas fa-home"></i>  Home
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo URL; ?>/categories">
-						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Golongan
+					<a href="<?php echo URL; ?>/categories"><i class="fas fa-list"></i>  Golongan
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo URL; ?>/posts">
-						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Pelanggan
+					<a href="<?php echo URL; ?>/posts"><i class="fas fa-users"></i>  Pelanggan
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo URL; ?>/users">
-						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Users
+					<a href="<?php echo URL; ?>/users"><i class="fas fa-user"></i>  User
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo URL; ?>/dashboard/logout">
-						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Logout
+					<a href="<?php echo URL; ?>/dashboard/logout"><i class="fas fa-sign-out-alt"></i>  Log out
 					</a>
 				</li>
 			</ul>

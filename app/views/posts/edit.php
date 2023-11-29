@@ -36,6 +36,16 @@
             <td><input type="text" name="pel_meteran" value="<?php echo $data['row']['pel_meteran']; ?>" required></td>
         </tr>
         <tr>
+            <td>User</td>
+            <td>
+                <select name="pel_id_user">
+                    <?php foreach ($data['optUser'] as $opt) { ?>
+                        <option value="<?php echo $opt['user_id']; ?>"><?php echo $opt['user_name']; ?></option>
+                    <?php } ?>
+                </select>
+            </td>
+        </tr>
+        <tr>
             <td></td>
             <td><input type="submit" name="btn_save" value="SAVE"></td>
         </tr>
